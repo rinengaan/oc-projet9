@@ -7,42 +7,65 @@
 	<title>Nina Carducci - Photographe professionnelle à Bordeaux</title>
 	<meta name="description"
 		content="Nina Carducci, photographe professionnelle à Bordeaux, vous propose l'opportunité de saisir ces merveilleux moments d'une vie au travers de son regard et de sa technique.">
+	<meta name="keywords" content="photographie, services photo, retouches photo, albums photo">
+	<link rel="icon" href="favicon.ico" type="image/x-icon" />
+	<!-- Open Graph data Facebook -->
+	<meta property="og:title" content="Nina Carducci - Photographe professionnelle à Bordeaux" />
+	<meta property="og:type" content="website" />
+	<meta property="og:locale" content="fr_FR">
+	<meta property="og:url" content="https://rinengaan.github.io/oc-projet9/">
+	<meta property="og:image" content="https://raw.githubusercontent.com/rinengaan/oc-projet9/dev/assets/images/nina.webp">
+	<meta property="og:description"
+		content="Nina Carducci, photographe professionnelle basée à Bordeaux, vous propose l'opportunité de saisir ces merveilleux moments d'une vie." />
+	<!-- Twitter Card data -->
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:site" content="@ninacarducci">
+	<meta name="twitter:title" content="Nina Carducci - Photographe professionnelle">
+	<meta name="twitter:description"
+		content="Découvrez le monde de la photographie avec Nina Carducci. Saisissez les merveilleux moments de votre vie.">
+	<meta name="twitter:image" content="https://raw.githubusercontent.com/rinengaan/oc-projet9/dev/assets/images/nina.webp">
+	<!-- CSS -->
 	<link rel="stylesheet" href="assets/bootstrap/bootstrap.css">
 	<link rel="stylesheet" href="assets/style.css">
+	<!-- Google Fonts -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link
 		href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap"
 		rel="stylesheet">
+	<!-- Scripts JS -->
 	<script defer src="assets/bootstrap/bootstrap.bundle.min.js"></script>
 	<script src="https://code.jquery.com/jquery-3.4.1.min.js"
 		integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 	<script defer src="assets/maugallery.js"></script>
 	<script defer src="assets/scripts.js"></script>
+	<!-- Schema.org -->
 	<script type="application/ld+json">
-	    {
-	      "@context": "https://schema.org/",
-	      "@type": "PhotographyBusiness",
-	      "name": "Nom de votre entreprise",
-	      "description": "Description de votre entreprise",
-	      "image": "URL_de_votre_logo.jpg",
-	      "address": {
-	        "@type": "PostalAddress",
-	        "streetAddress": "Votre adresse",
-	        "addressLocality": "Votre ville",
-	        "postalCode": "Code postal",
-	        "addressCountry": "Pays"
-	      },
-	      "telephone": "Votre numéro de téléphone",
-	      "email": "Votre adresse e-mail",
-	      "url": "URL_de_votre_site_web",
-	      "sameAs": [
-	        "URL_de_votre_page_Facebook",
-	        "URL_de_votre_compte_Instagram",
-	        "URL_de_votre_compte_Twitter"
-	      ]
-	    }
-	    </script>
+	{
+	"@context": "https://schema.org/",
+	"@type": "LocalBuisness",
+	"name": "Nina Carducci",
+	"description": "Photographe professionnelle à Bordeaux.",
+	"priceRange":"€€",
+	"address": {
+		"@type": "PostalAddress",
+		"streetAddress": "68 Avenue Alsace Lorraine",
+		"addressLocality": "Bordeaux",
+		"addressRegion": "Nouvelle-Aquitaine",
+		"postalCode": "33200",
+		"addressCountry": "FR"
+	},
+	"geo": {
+			"@type": "GeoCoordinates",
+			"latitude": 44.84670361409801
+			"longitude": -0.606525771164225
+		},
+		"openingHours": "Mo-Fr 10:00-19:00"
+		"telephone": "05 56 67 78 89",
+		"url": "https://rinengaan.github.io/oc-projet9/"
+	]
+	}
+	</script>
 </head>
 
 <body>
@@ -153,7 +176,8 @@
 			<div class="quote">
 				<figure>
 					<blockquote>
-						<span class="quote__text">Un portrait n’est pas une ressemblance. Dès lors qu’une émotion ou qu’un
+						<span class="quote__text">Un portrait n’est pas une ressemblance. Dès lors qu’une émotion ou
+							qu’un
 							fait est traduit en photo, il cesse d’être un fait pour devenir une opinion. L’inexactitude
 							n’existe pas en photographie. Toutes les photos sont exactes. Aucune d’elles n’est la
 							vérité.
@@ -207,7 +231,8 @@
 		<div class="quote">
 			<figure>
 				<blockquote>
-					<span class="quote__text">De manière inconsciente, je crois, je guette un regard, une expression, des
+					<span class="quote__text">De manière inconsciente, je crois, je guette un regard, une expression,
+						des
 						traits ou une nostalgie capable de résumer ou plus exactement de révéler une vie</span>
 				</blockquote>
 				<figcaption class="quote__author">- Richard Avedon</figcaption>
@@ -220,11 +245,11 @@
 				<h2>Une question ? Une demande de devis ?</h2>
 				<p> N’hésitez pas à m’écrire ! Je vous répondrais en moins de 24 heures</p>
 				<form action="" method="post">
-					<label>Nom</label>
+					<label for="nom">Nom</label>
 					<input type="text" name="nom" id="nom">
-					<label>Email</label>
+					<label for="email">Email</label>
 					<input type="email" name="email" id="email">
-					<label>Message</label>
+					<label for="message">Message</label>
 					<textarea name="message" id="message" cols="30" rows="10"></textarea>
 					<input type="submit" value="Envoyer" />
 				</form>
